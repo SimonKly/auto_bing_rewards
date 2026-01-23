@@ -9,11 +9,12 @@
 ## 技术栈
 1. python3.12
 2. playwright
-3. FastApi
-4. sqlite
-4. jQuery
-5. html5
-6. bootstrap
+3. playwright-stealth 2.0+
+4. FastApi
+5. sqlite
+6. jQuery
+7. html5
+8. bootstrap
 
 ## 详细设计
 
@@ -58,3 +59,19 @@
     6. 实时积分
     7. 今日获取的积分
 
+## 项目结构
+
+```shell
+ms_rewards_project/
+├── app/
+│   ├── __init__.py
+│   ├── main.py          # FastAPI 路由与主程序 (API Routes & Main App)
+│   ├── database.py      # 数据库模型与 CRUD (Database Models & CRUD)
+│   ├── bot.py           # Playwright 自动化核心逻辑 (Playwright Bot Logic)
+│   └── static/          # 前端静态文件 (Frontend Static Files)
+│       └── index.html   # 可视化仪表盘 (Dashboard UI)
+├── data/                # 存放 SQLite 数据库 (Database Storage)
+├── logs/                # 运行日志 (Execution Logs)
+├── requirements.txt     # 项目依赖 (Dependencies)
+└── .env                 # 环境变量 (Environment Variables)
+```

@@ -1,0 +1,14 @@
+{
+  "accounts": [
+    {
+      "name": "account_2",
+      "email": "your_second_bing_account@example.com",
+      "password": "your_bing_password_2"
+    },
+    {
+      "name": "account_3",
+      "email": "your_third_bing_account@example.com",
+      "password": "your_bing_password_3"
+    }
+  ]
+}
