@@ -1,0 +1,20 @@
+{
+  "hot_list": "{\n\"datetime\": \"2026-01-30T08:30:00.182Z\",\n\"hot_search_topics\": [\n\"任天堂在靖国神社教孩子玩牌\",\n\"甘肃白银3.6级地震\",\n\"智能穿戴千亿级赛道爆发\",\n\"年味vlog不打烊\",\n\"东京街头发生重大抢劫案\",\n\"黄金白银价格双双暴跌原因\",\n\"这辈子卖得最后悔的一只狗\",\n\"Turbo5Max满配性能旗舰\",\n\"11名储户220万元存款被银行员工转走\",\n\"生命树破平台招商记录\",\n\"中共中央政治局1月30日召开会议\",\n\"洗衣机的快洗模式到底该怎么用\",\n\"刘宇宁这个视频退出键在哪\",\n\"袁娅维在美国唐人街偶遇周深\",\n\"过年回家只需要带一套体面衣服\",\n\"舒淇 张学友梦女\",\n\"看肖战王彦霖懂了卧蚕和眼袋的区别\",\n\"黄金价格暴跌原因\",\n\"金饰报克价1400元半小时后涨价作废\",\n\"欧阳娜娜遇到了最宠她的哥哥\",\n\"时代少年团痛包\",\n\"企业家应该打造个人IP吗\",\n\"丈夫去世妻子不知情婆家领走70万\",\n\"普通人上镜能有多离谱\",\n\"700元入手的黄金卖出狂赚八万多\",\n\"微博之夜\",\n\"男子买6元彩票喜中百万大奖\",\n\"生命树\",\n\"白鹿官宣王者荣耀\",\n\"文学教授批言情作品毒害年轻女性\",\n\"关晓彤婉拒马上有对象\",\n\"喜之郎果冻微博删除金晨代言内容\"\n]\n}"
+}
+
+app-ED1Kr007vXUaLvXhmyMGNoxH
+
+curl -X POST 'https://api.dify.ai/v1/workflows/run' \
+--header 'Authorization: Bearer app-ED1Kr007vXUaLvXhmyMGNoxH' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "inputs": {},
+  "response_mode": "blocking",
+  "user": "bot"
+}'
+
+<p class="b_subtitle promo-title">You earned 60 points already!</p>
+
+<div class="daily_search_row"><span>每日搜索</span><span>3/60</span></div>
+
+waiting for iframe[src*="/rewards/panelflyout"] >> internal:control=enter-frame >> internal:role=link[name=/每日搜索 \d+/\d+ 每

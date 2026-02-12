@@ -1,0 +1,17 @@
+# logging_config.yaml
+logging:
+    level: "DEBUG"
+    format: "<green>{time:YYYY-MM-DD HH:mm:ss}</green> | <level>{level:7}</level> | <cyan>{name}</cyan>:<cyan>{function}</cyan>:<cyan>{line}</cyan> - <level>{message}</level>"
+    
+    handlers:
+      - sink: "sys.stdout"  # 控制台输出
+        level: "INFO"
+        enqueue: true     # 异步写入
+        
+      - sink: "logs/app.log" # 文件输出
+        level: "DEBUG"
+        rotation: "10 MB"    # 轮转：文件大小达到10MB
+        retention: "7 days"  # 保留：最近7天
+        compression: "zip"   # 压缩：旧日志存为zip
+        encoding: "utf-8"
+        enqueue: true

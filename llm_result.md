@@ -169,3 +169,26 @@ npx playwright codegen https://cn.bing.com
 在打开的窗口中，鼠标悬停在元素上，Playwright 会直接显示该元素的推荐定位方式（通常就是 `get_by_role`）。
 
 **你现在是在尝试重写刚才那个必应登录脚本的按钮定位吗？如果 `id="id_l"` 容易变，改用 `page.get_by_role("link", name="登录")` 可能会更稳。**
+
+
+my_fastapi_app/
+├── app/
+│   ├── __init__.py
+│   ├── main.py              # 项目入口，初始化 FastAPI 实例
+│   ├── api/                 # 接口路由层 (v1, v2...)
+│   │   ├── __init__.py
+│   │   ├── api_v1/
+│   │   │   ├── __init__.py
+│   │   │   └── endpoints/   # 具体业务接口 (users.py, items.py)
+│   ├── core/                # 全局配置 (config.py, security.py)
+│   ├── crud/                # 数据库增删改查逻辑
+│   ├── models/              # 数据库模型 (SQLAlchemy/SQLModel)
+│   ├── schemas/             # 数据验证模型 (Pydantic)
+│   ├── db/                  # 数据库连接与初始化
+│   ├── dependencies/        # 全局依赖项 (如 get_db)
+│   └── tests/               # 测试用例
+├── .env                     # 环境变量
+├── .gitignore
+├── alembic/                 # 数据库迁移工具 (可选)
+├── requirements.txt         # 项目依赖
+└── docker-compose.yml       # 容器化配置
